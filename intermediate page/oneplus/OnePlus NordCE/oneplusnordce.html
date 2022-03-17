@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OnePlus Nord CE</title>
+        <link rel = "icon" type = "image" href = "img/logo.jpeg" async>
+        <link rel="stylesheet" href="css/oneplusnordce.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <!-- nav bar start -->
+              <nav class="nav" id="nav">
+                <!-- logo and bars -->
+                  <div class="title">
+                      <ul>
+                          <li><i class="fa fa-bars" id = "bars"></i></li>    
+                          <li><a href="#" class="logo1"><img src="img/logo.jpeg" class="logo"></img>Techy</a></li> 
+                      </ul>
+                  </div>
+                  <!-- navbar conyents  -->
+                  <div class="menu">
+                    <ul>
+                      <li><a href="" class="menu-item" id = "menu-item">Home</a></li>
+                      <li><a href="" class="menu-item" id = "menu-item">Support</a></li>
+                      <li><a href="" class="menu-item" id = "menu-item">Account</a></li>
+                    </ul> 
+                  </div>  
+                       <!--search logo   -->
+                  <li><a href="#" id="search"class="search1" ><i class="fa fa-search"></i></a></li> 
+                  <!-- basket logo -->
+                  <div class="cart" onclick="addtocart()">
+                    <ul>
+                      <li><a href="#"><i class="fa fa-shopping-basket"></i></a></li>
+                    </ul>
+                  </div>
+                  <!-- search input form -->
+                  <div class="search-form">
+                      <form>
+                          <input type="text" name="" placeholder="Search...">
+                      </form>
+                      <div class="autocom-box">
+                      </div>
+                      <!-- cross logo for search  -->
+                  </div>
+                  <a class="close"><i class="fa fa-times"></i> </a>
+              </nav>
+        </header>
+        <div class="container">
+        <div class="bannerscetion ">
+            <div class="infobox animate animateLeft">
+                <h1>OnePlus Nord CE Charcoal Ink</h1>
+                <div class="pricebox">
+                    ₹24,999
+                </div>
+
+                <button class="buy" onclick="add1()"><a href="carddetails/card_details.html">Get it Now</a></button></br>
+                <button class="button" onclick="add()">Add to Cart</button>
+            </div>
+            <div class="imgbox animate animateRight">
+                <img src="img/black.png" alt="OnePlus Nord CE Charcoal Ink">
+            </div>
+        </div>
+
+        <!-- banner section ends here -->
+
+        <div class="footersection">
+            <!-- box starts form here -->
+            <div class="box">
+                <div class="thumbnail">
+                    <img src="img/blue.png" alt="OnePlus Nord CE Blue Void">
+                </div>
+                
+                <div class="infobox">
+                    <h5>OnePlus Nord CE Blue Void</h5>
+                    <div class="price">
+                        ₹24,999
+                    </div>
+                </div>
+            </div>
+            <!-- box end -->
+
+            <!-- box starts form here -->
+            <div class="box">
+                <div class="thumbnail">
+                    <img src="img/white.png" alt="OnePlus Nord CE Silver Ray">
+                </div>
+                
+                <div class="infobox">
+                    <h5>OnePlus Nord CE Silver Ray</h5>
+                    
+                    <div class="price">
+                        ₹24,999
+                    </div>
+                </div>
+            </div>
+            <!-- box end -->
+            <!-- box starts form here -->
+            <div class="box">
+                <div class="thumbnail ">
+                    <img src="img/black.png" alt="OnePlus Nord CE Charcoal Ink">
+                </div>
+                
+                <div class="infobox">
+                    <h5>OnePlus Nord CE Charcoal Ink</h5>
+                    <div class="price">
+                        ₹24,999
+                    </div>
+                </div>
+            </div>
+            <!-- box end -->
+       
+            
+        </div>
+        <!-- footer sectiion ends here -->
+
+
+        
+        <!-- detailafter footer start -->
+        <div onmouseover="mouseOver()" onmouseout="mouseOut()">
+        <div class="details">
+            <h6>View more details</h6>
+            <div class="details-img">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+                <img src="img/10.jpg" alt="">
+                <img src="img/11.jpg" alt="">
+                <img src="img/12.jpg" alt="">
+            </div>
+            </div>
+        </div>
+
+        <!-- detailafter footer end -->
+
+
+        
+
+        <!-- add to cart starts -->
+        <div class="select1">
+        </div>
+        <div class="select">
+        </div>
+        <span class="remove" onclick="remove()"><i class="fa fa-trash"></i></span>
+        <!-- add to cart ends -->
+
+
+        
+
+        <script src="js/script1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+        <script src="js/suggestions.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/productpage.js"></script>
+    </body>
+    </html>

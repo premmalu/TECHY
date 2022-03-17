@@ -1,0 +1,55 @@
+
+.padding{
+    padding:2rem !important;
+  }
+  .phone{
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .card{
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 0px 1px 2px 1px rgba(154,154,204,0.22);
+  }
+  .card-header{
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6f2;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h5{
+    font-size: 15px;
+    line-height:26px;
+    color: #3d405c;
+  }
+  .text-dark{
+    color: #3d405c !important;
+  }
+  a{
+    float: right;
+  }
+  #endy{
+    float: right;
+    margin-top:5%;
+  }
+  .barcode{
+    margin-top:10%;
+  }
+  .qrcode{
+    margin-left: 800px;
+    margin-top: -190px;
+    
+  }
+  @media screen and (max-width:800px){
+    .qrcode{
+        margin: 0;
+        padding:0;
+    }
+  
+  }
+  @media print{
+    .noprint{
+        visibility: hidden;
+    }
+  }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="ROG28128.css">
+    
+</head>
+<body>
+    <!-- Invoice page -->
+    <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 padding" id="content2">
+        <div class="card">
+            <div class="card-header p-4">
+                <a href="#" class="pt-2 d-inline-block phone">Techy</a>
+                <div class="float-right">
+                    <h3 class="mb-0">INVOICE #ROG28128<span id="bill"></span></h3>
+                    <p id="getdate"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Address -->
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-sm-6">
+                    <h3 class="mb-3">From:</h3>
+                    <h3 class="text-dark mb-1" >Techy Pvt.Ltd</h3>
+                    <div >78,TownHall Road</div>
+                    <div>Coimbatore,641005</div>
+                    <div>Email : aspproject@tutanota.com</div>
+                    <div>Phone :    +1800 543210</div>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="mb-3">To:</h3>
+                    <h3 class="text-dark mb-1"><span id="toname"></span></h3>
+                    <div><span id="ad1"></span></div>
+                    <div><span id="ad2"></span></div>
+                    <div><span id="ad3"></span></div>
+                    <div><span id="ad4"></span></div>
+                    <div>Email : <span id="email"></span></div>
+                    <div>Phone : <span id="phone"></span></div>
+                </div>
+                
+            </div>
+            <!-- QR code -->
+            <img src="ROG28128 qr.png" alt="qrcode" width="150px" class="qrcode">
+            <!-- Product Details -->
+            <div class="table-responsive-sm">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th class="center">S.no</th>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th class = "right">Price</th>
+                            <th class="center">Qty</th>
+                            <th class="right">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">1</td>
+                            <td class="left strong">ASUS ROG</td>
+                            <td class="left">ASUS ROG2</td>
+                            <td class="right">Rs.39,999</td>
+                            <td class="center">1</td>
+                            <td class="right">Rs.39,999</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </div>
+            <!-- Total -->
+            <div class="row" id="endy">
+                <div class="col-lg-4 col-sm-5 ml-auto">
+                    <table class="table table-clear">
+                        <tbody>
+                            <tr>
+                                <td class="left">
+                                    <strong class="text-dark">Subtotal</strong>
+                                </td>
+                                <td class="right">Rs.39,999</td>
+                            </tr>
+                            <tr>
+                                <td class="left">
+                                    <strong class="text-dark">Discount(5%)</strong>
+                                </td>
+                                <td class="right">(-)Rs.1,999.05</td>
+                            </tr>
+                            <tr>
+                                <td class="left">
+                                    <strong class="text-dark">Total</strong>
+                                </td>
+                                <td class="right">Rs.37,999.05</td>
+                            </tr>
+                            <tr>
+                                <td><img src="ordered.jpeg" alt="order-status" width="150px"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Barcode -->
+        <img src="ROG28128code.png" alt="barcode" width="150px" class="barcode"><br><br>
+        <!-- Printing Invoice Copy -->
+        <button onclick="window.print()" class="btn btn-info noprint">Click to print</button>
+    </div>
+    
+    <script type="text/javascript">
+
+    //Auto Date 
+    var today=new Date();
+    var date=today.getFullYear()+'-'+(today.getMonth()+1)+'-'+(today.getDate());
+    document.getElementById("getdate").innerHTML=date;
+
+    //Invoice Bill Number 
+    var count=100000;
+    for (let i = 0; i < count; i++) {
+        document.getElementById("bill").innerHTML=Math.floor(Math.random()*i);
+        
+    }
+    document.getElementById("toname").innerHTML = localStorage.getItem("textvalue");
+    document.getElementById("ad1").innerHTML = localStorage.getItem("textvalue1");
+    document.getElementById("ad2").innerHTML = localStorage.getItem("textvalue2");
+    document.getElementById("ad3").innerHTML = localStorage.getItem("textvalue3");
+    document.getElementById("ad4").innerHTML = localStorage.getItem("textvalue4");
+    document.getElementById("email").innerHTML = localStorage.getItem("textvalue5");
+    document.getElementById("phone").innerHTML = localStorage.getItem("textvalue6");
+    
+document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+let suggestions =[
+    "Apple Iphone XR",
+    "Apple Iphone 11",
+    "Apple Iphone 11 Pro",
+    "Apple Iphone 11 Pro Max",
+    "Apple Iphone 12",
+    "Apple Iphone 12 Mini",
+    "Apple Iphone 12 Pro",
+    "Apple Iphone 12 Pro Max",
+    "One Plus 8 Pro",
+    "One Plus 8T",
+    "One Plus Nord",
+    "One Plus Nord CE",
+    "OnePlus 9R",
+    "OnePlus 9",
+    "OnePlus 9 Pro",
+    "ROG Phone 5",
+    "ROG Phone 3",
+    "ROG Phone II"
+];
